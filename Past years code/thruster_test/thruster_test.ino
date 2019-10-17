@@ -29,7 +29,7 @@ int signal = 1650; // Set signal value, which should be between 1100 and 1900
 int stop = 1500; // Stop thruster //1500-1900 positive 1100-1499 negative
 
 
-Servo A1; 
+Servo servo1; 
 Servo servo2;
 Servo servo3;
 Servo servo4;
@@ -57,7 +57,7 @@ void setup()
   servo4.writeMicroseconds(1500); // send "stop" signal to ESC.
   servo5.writeMicroseconds(1500); // send "stop" signal to ESC.
   servo6.writeMicroseconds(1500); // send "stop" signal to ESC.
-  servo7.writeMicroseconds(1500); // send "stop" signal to ESC.
+  servo7.writeMicroseconds(stop); // send "stop" signal to ESC.
   servo8.writeMicroseconds(1500); // send "stop" signal to ESC.
 
   pinMode(MissionSwitch, INPUT); //Mission switch connection as input
