@@ -81,7 +81,7 @@ void loop()
     //THE ACTUAL CODE FOR EACH FUNCTION IS FURTHER DOWN
     float sensorValue = analogRead(A0);
     float pressure = sensorValue/15.0;
-    dir= Serial.read();
+    dir= Serial.read(); //TAKES IN YOUR INPUT
     switch(dir){
       case 'd':
         down();
