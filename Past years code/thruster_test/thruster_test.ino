@@ -51,9 +51,9 @@ void setup()
   servo8.attach(servoPin8); 
 
   //stop them all
-  servo1.writeMicroseconds(1500); // send "stop" signal to ESC.
-  servo2.writeMicroseconds(1500); // send "stop" signal to ESC.
-  servo3.writeMicroseconds(1500); // send "stop" signal to ESC.
+  servo1.writeMicroseconds(stop); // send "stop" signal to ESC.
+  servo2.writeMicroseconds(stop); // send "stop" signal to ESC.
+  servo3.writeMicroseconds(stop); // send "stop" signal to ESC.
   servo4.writeMicroseconds(1500); // send "stop" signal to ESC.
   servo5.writeMicroseconds(1500); // send "stop" signal to ESC.
   servo6.writeMicroseconds(1500); // send "stop" signal to ESC.
