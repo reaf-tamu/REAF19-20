@@ -51,9 +51,9 @@ void setup()
   servo8.attach(servoPin8); 
 
   //stop them all
-  servo1.writeMicroseconds(1500); // send "stop" signal to ESC.
-  servo2.writeMicroseconds(1500); // send "stop" signal to ESC.
-  servo3.writeMicroseconds(1500); // send "stop" signal to ESC.
+  servo1.writeMicroseconds(stop); // send "stop" signal to ESC.
+  servo2.writeMicroseconds(stop); // send "stop" signal to ESC.
+  servo3.writeMicroseconds(stop); // send "stop" signal to ESC.
   servo4.writeMicroseconds(1500); // send "stop" signal to ESC.
   servo5.writeMicroseconds(1500); // send "stop" signal to ESC.
   servo6.writeMicroseconds(1500); // send "stop" signal to ESC.
@@ -81,7 +81,7 @@ void loop()
     //THE ACTUAL CODE FOR EACH FUNCTION IS FURTHER DOWN
     float sensorValue = analogRead(A0);
     float pressure = sensorValue/15.0;
-    dir= Serial.read();
+    dir= Serial.read(); //TAKES IN YOUR INPUT
     switch(dir){
       case 'd':
         down();
